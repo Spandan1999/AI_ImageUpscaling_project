@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error: Image Upscale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #e74c3c;
+            margin: 0 0 10px;
+        }
+        p {
+            color: #333;
+            margin: 0;
+        }
+        .try-again-btn {
+            margin-top: 10px;
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .try-again-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Error: Image Upscale</h1>
+        <p>The image was not upscaled successfully. Please try again.</p>
+        <a class="try-again-btn" href="{% url 'imageUpload' %}">Try Again</a>
+    </div>
+</body>
+</html>
